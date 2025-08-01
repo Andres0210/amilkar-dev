@@ -17,11 +17,11 @@ export default function Footer() {
         <div className="flex flex-row items-center gap-6">
           {/* Grupo profesional */}
           <div className="flex gap-5 items-center">
-            <Link href="mailto:ing_amilkar@hotmail.com.com" aria-label="Correo">
+            <Link href="mailto:ing_amilkar@hotmail.com" aria-label="Correo">
               <Mail className="h-6 w-6 md:hover:text-red-500 md:text-current text-red-500 transition-colors duration-300" />
             </Link>
             <Link href="https://github.com/Andres0210" target="_blank" aria-label="GitHub">
-              <Github className="h-6 w-6 md:hover:text-black md:text-current text-black dark:hover:text-white transition-colors duration-300" />
+              <Github className="h-6 w-6 md:hover:text-black md:text-current text-black md:dark:hover:text-white dark:text-white transition-colors duration-300" />
             </Link>
             <Link href="https://www.linkedin.com/in/amilcar-ibarra-221b98115/" target="_blank" aria-label="LinkedIn">
               <Linkedin className="h-6 w-6 md:hover:text-blue-600 md:text-current text-blue-600 md:dark:hover:text-blue-400 transition-colors duration-300" />
