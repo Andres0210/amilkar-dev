@@ -17,7 +17,7 @@ export default function Hero() {
         transition={{ duration: 0.8 }}
       >
         <h1 className="text-5xl md:text-6xl font-extrabold leading-tight text-foreground">
-          Hola, soy <span className="text-primary">Amilkar</span>
+          Hola, soy <span className="text-primary">Amilcar</span>
         </h1>
         <p className="text-lg text-muted-foreground max-w-xl">
           Ingeniero Biomédico y desarrollador de software. Apasionado por
