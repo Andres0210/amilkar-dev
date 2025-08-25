@@ -15,8 +15,31 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Amilkar | Software Developer",
-  description: "Portfolio of a passionate full-stack developer.",
+  title: "Amilcar Ibarra | Portafolio",
+  description: "Portafolio de Amilcar Ibarra, Ingeniero Biomédico y Desarrollador Web.",
+  openGraph: {
+    title: "Amilcar Ibarra | Portafolio",
+    description: "Explora mis proyectos y experiencia en desarrollo de software.",
+    url: "https://amilcaribarra.dev",
+    siteName: "Amilcar Andrés Ibarra",
+    images: [
+      {
+        url: "https://amilcaribarra.dev/preview.png", 
+        width: 1200,
+        height: 630,
+        alt: "Portafolio de Amilcar Ibarra",
+      },
+    ],
+    locale: "es_ES",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Amilcar Ibarra | Portafolio",
+    description: "Explora mis proyectos y experiencia en desarrollo de software.",
+    images: ["https://amilcaribarra.dev/preview.png"],
+    creator: "@andres_0210", // opcional
+  },
 };
 
 export default function RootLayout({

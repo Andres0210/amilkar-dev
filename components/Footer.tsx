@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 flex flex-col  items-center justify-between gap-6">
         {/* Marca y derechos */}
         <div className="text-center ">
-          <p className="text-center font-medium text-primary">Amilkar Andrés Ibarra</p>
+          <p className="text-center font-medium text-primary">Amilcar Andrés Ibarra</p>
           <p className="text-sm text-muted-foreground mt-1">&copy; {new Date().getFullYear()} Todos los derechos reservados.</p>
         </div>
 
@@ -21,7 +21,7 @@ export default function Footer() {
               <Mail className="h-6 w-6 md:hover:text-red-500 md:text-current text-red-500 transition-colors duration-300" />
             </Link>
             <Link href="https://github.com/Andres0210" target="_blank" aria-label="GitHub">
-              <Github className="h-6 w-6 md:hover:text-black md:text-current dark:text-white transition-colors duration-300" />
+              <Github className="h-6 w-6 md:hover:text-black md:text-current text-black dark:hover:text-white transition-colors duration-300" />
             </Link>
             <Link href="https://www.linkedin.com/in/amilcar-ibarra-221b98115/" target="_blank" aria-label="LinkedIn">
               <Linkedin className="h-6 w-6 md:hover:text-blue-600 md:text-current text-blue-600 md:dark:hover:text-blue-400 transition-colors duration-300" />
