@@ -1,0 +1,14 @@
+node_modules
+.next
+out
+dist
+coverage
+.storybook
+storybook-static
+.git
+.github
+.vscode
+*.log
+Dockerfile
+docker-compose*.yml
+.env*
