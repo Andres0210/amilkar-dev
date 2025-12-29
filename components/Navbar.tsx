@@ -23,11 +23,11 @@ export default function Navbar() {
       <div className="container mx-auto flex items-center justify-between py-4 px-4 md:px-8">
         {/* Avatar + Name */}
         <Link href="/" className="flex items-center space-x-2">
-          <Avatar>
+          {/* <Avatar>
             <AvatarImage src="/Avatar.jpg" alt="Amilkar Ibarra" />
             <AvatarFallback>AI</AvatarFallback>
-          </Avatar>
-          <span className="hidden md:inline font-semibold text-lg text-black dark:text-white">Amilkar Ibarra</span>
+          </Avatar> */}
+          <span className="hidden md:inline font-semibold text-lg text-black dark:text-white">Amilcar Ibarra</span>
         </Link>
 
         {/* Desktop nav */}
