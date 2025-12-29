@@ -23,7 +23,7 @@ export const skills: SkillType[] = [
     category: "Frontend",
   },
   {
-    name: "JavaScript",
+    name: "JavaScript / TypeScript",
     logo: "/logos/javascript.png",
     category: "Frontend",
   },
@@ -72,19 +72,19 @@ export const skills: SkillType[] = [
     logo: "/logos/postgresql.png",
     category: "BaseDeDatos",
   },
-  {
-    name: "MariaDB",
-    logo: "/logos/mariadb.png",
-    category: "BaseDeDatos",
-  },
+  // {
+  //   name: "MariaDB",
+  //   logo: "/logos/mariadb.png",
+  //   category: "BaseDeDatos",
+  // },
   {
     name: "MySQL",
     logo: "/logos/mysql.png",
     category: "BaseDeDatos",
   },
-  {
-    name: "MongoDB",
-    logo: "/logos/mongodb.png",
-    category: "BaseDeDatos",
-  },
+  // {
+  //   name: "MongoDB",
+  //   logo: "/logos/mongodb.png",
+  //   category: "BaseDeDatos",
+  // },
 ];
