@@ -1,8 +1,6 @@
-'use client';
-import { motion } from 'motion/react';
+"use client";
+import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
-
-
 
 import Image from "next/image";
 
@@ -17,16 +15,24 @@ export default function Hero() {
         transition={{ duration: 0.8 }}
       >
         <h1 className="text-5xl md:text-6xl font-extrabold leading-tight text-foreground">
-          Hola, soy <span className="text-primary">Amilcar</span>
+          Hi, I'm <span className="text-primary">Amilcar</span>
         </h1>
         <p className="text-lg text-muted-foreground max-w-xl">
-          Ingeniero Biomédico y desarrollador de software. Apasionado por
-          crear soluciones innovadoras que mejoran vidas.
+          {/* Desarrollador backend con enfoque en Java y Spring Boot. Diseño e
+          implemento APIs REST, sistemas backend e integraciones con servicios
+          externos, enfocados en resolver problemas reales. También cuento con experiencia trabajando
+          con Node.js y NestJS y disfruto aplicar buenas prácticas en
+          arquitectura, seguridad y gestión de datos. */}
+          Backend Developer with a focus on Java and Spring Boot. I design and
+          implement REST APIs, backend systems, and external service
+          integrations aimed at solving real-world problems. I also have
+          experience working with Node.js and NestJS, and I enjoy applying best
+          practices in architecture, security, and data management.
         </p>
         <div className="flex justify-center md:justify-start gap-4">
-          <Button size="lg">Ver proyectos</Button>
+          <Button size="lg">Projects</Button>
           <Button size="lg" variant="outline">
-            Descargar CV
+            Download CV
           </Button>
         </div>
       </motion.div>
@@ -39,7 +45,7 @@ export default function Hero() {
         transition={{ duration: 0.8, delay: 0.3 }}
       >
         <Image
-          src="/amilcar.jpg"
+          src="/amilcar.jpeg"
           alt="Foto de Amilkar"
           fill
           priority

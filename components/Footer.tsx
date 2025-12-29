@@ -21,7 +21,17 @@ export default function Footer() {
               <Mail className="h-6 w-6 md:hover:text-red-500 md:text-current text-red-500 transition-colors duration-300" />
             </Link>
             <Link href="https://github.com/Andres0210" target="_blank" aria-label="GitHub">
-              <Github className="h-6 w-6 md:hover:text-black md:text-current text-black dark:hover:text-white transition-colors duration-300" />
+              <Github className="
+    h-6 w-6
+    text-black
+    dark:text-white
+    md:text-current
+    md:dark:text-current
+    md:hover:text-black
+    md:dark:hover:text-white
+    transition-colors
+    duration-300
+  " />
             </Link>
             <Link href="https://www.linkedin.com/in/amilcar-ibarra-221b98115/" target="_blank" aria-label="LinkedIn">
               <Linkedin className="h-6 w-6 md:hover:text-blue-600 md:text-current text-blue-600 md:dark:hover:text-blue-400 transition-colors duration-300" />
