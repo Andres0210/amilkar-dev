@@ -45,7 +45,7 @@ export default function Hero() {
         transition={{ duration: 0.8, delay: 0.3 }}
       >
         <Image
-          src="/amilcar.jpeg"
+          src="/6x9 digital.jpg.jpeg"
           alt="Foto de Amilkar"
           fill
           priority
