@@ -64,7 +64,7 @@ export default function ProjectDetails({ project }: { project: any }) {
               Capacidades principales
             </p>
             <div className="mt-5 grid gap-4">
-              {project.highlights.map((item) => {
+              {project.highlights.map((item: any) => {
                 const Icon = item.icon;
 
                 return (
@@ -106,7 +106,7 @@ export default function ProjectDetails({ project }: { project: any }) {
             </div>
 
             <div className="mt-6 grid gap-4">
-              {project.architecture.map((area) => (
+              {project.architecture.map((area: any) => (
                 <div
                   key={area.label}
                   className="rounded-[1.4rem] border border-border/70 bg-background/55 p-4"
