@@ -4,11 +4,17 @@ import Footer from "@/components/Footer";
 import { projects } from "@/app/data/projects";
 import ProjectDetails from "@/components/projects/ProjectDetail";
 
-export default function ProjectPage({ params }: { params: { slug: string } }) {
-  const project = projects.find((item) => item.slug === params.slug);
+export default async function ProjectPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+
+  const project = projects.find((item) => item.slug === slug);
 
   if (!project) {
-    return notFound();
+    notFound();
   }
 
   return (

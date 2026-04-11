@@ -23,7 +23,7 @@ export default function Footer() {
             href="mailto:ing_amilkar@hotmail.com"
             className="inline-flex items-center gap-2 self-start rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
           >
-            Escribirme
+            Escribeme
             <ArrowUpRight className="size-4" />
           </Link>
         </div>
