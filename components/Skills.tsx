@@ -1,31 +1,54 @@
-import { skills } from "@/types";
-import Skill from "./Skill";
+﻿export default function Skills() {
+  const columns = [
+    {
+      title: "Backend engineering",
+      items: ["Java", "Spring Boot", "Node.js", "NestJS"],
+      copy: "Diseno de servicios, capas de negocio, autenticacion e integraciones.",
+    },
+    {
+      title: "Frontend con criterio",
+      items: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+      copy: "Interfaces limpias cuando el producto necesita consistencia end-to-end.",
+    },
+    {
+      title: "Data y tooling",
+      items: ["PostgreSQL", "MySQL", "Git", "GitHub"],
+      copy: "Persistencia, control de cambios y habitos de trabajo sostenibles.",
+    },
+  ];
 
-const categories = [
-  "Backend",
-  "Frontend",  
-  "BaseDeDatos",
-  "Herramientas",
-] as const;
-
-export default function Skills() {
   return (
-    <section className="py-16 px-6 max-w-6xl mx-auto" id="skills">
-      <h2 className="text-3xl font-bold mb-10 text-center">Technical Skills</h2>
+    <section className="section-shell py-16 md:py-24" id="skills">
+      <div className="mb-10 max-w-2xl">
+        <p className="eyebrow">Stack</p>
+        <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em] md:text-5xl">
+          Tecnologias que uso para construir productos consistentes.
+        </h2>
+        <p className="mt-4 text-base leading-8 text-muted-foreground">
+          Mas que una lista de logos, este stack refleja como pienso la
+          implementacion: claridad, estabilidad y una base tecnica preparada
+          para crecer.
+        </p>
+      </div>
 
-      <div className="space-y-12">
-        {categories.map((category) => (
-          <div key={category}>
-            <h3 className="text-lg font-semibold mb-4 text-neutral-700 dark:text-neutral-300">
-              {category}
-            </h3>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-              {skills
-                .filter((skill) => skill.category === category)
-                .map((skill) => (
-                  <Skill key={skill.name} {...skill} />
-                ))}
+      <div className="grid gap-5 md:grid-cols-3">
+        {columns.map((column) => (
+          <div key={column.title} className="glass-panel rounded-[1.75rem] p-6">
+            <p className="font-mono text-[0.72rem] uppercase tracking-[0.28em] text-primary">
+              {column.title}
+            </p>
+            <p className="mt-4 text-sm leading-7 text-muted-foreground">
+              {column.copy}
+            </p>
+            <div className="mt-6 flex flex-wrap gap-2">
+              {column.items.map((item) => (
+                <span
+                  key={item}
+                  className="rounded-full border border-border/70 bg-background/65 px-3 py-2 text-sm text-foreground"
+                >
+                  {item}
+                </span>
+              ))}
             </div>
           </div>
         ))}
